@@ -1,0 +1,157 @@
+@media (max-width: 850px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}
+
+.about-container {
+  background-image: url("../../Images/back2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutbody {
+  font-size: 20px;
+  text-align: left;
+  font-family: Montserrat;
+}
+@media (min-width: 768px) {
+  .paddingtoleft {
+    padding-left: 400px;
+    padding-right: 20px;
+  }
+  .paddingtoright {
+    padding-left: 20px;
+    padding-right: 400px;
+  }
+  .number {
+    font-family: "Poppins";
+    font-size: 60px;
+    color: gray;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .centeronsmall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .paddingtoleft {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .paddingtoright {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .number {
+    font-family: "Poppins";
+    font-size: 50px;
+    color: gray;
+    margin-top: 60px;
+    margin-left: 100px;
+  }
+  .centeronsmall {
+    text-align: center;
+  }
+}
+/* Styles for large screens
+@media (min-width: 768px) {
+  .video {
+    width: 100%;
+    height: 90vh;
+    max-height: 100vh;
+    object-fit: cover;
+    margin-bottom: clamp(10px, 100px, 200px);
+  }
+
+  .vertical-line {
+    position: absolute;
+    margin-top: 40px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 10%;
+    background-color: black;
+    z-index: 100;
+  }
+
+  .vertical-line .dot {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bounce 1s infinite;
+  }
+} */
+
+/* Styles for smaller screens
+@media (max-width: 768px) {
+  .video {
+    width: 50%;
+    height: 90vh;
+    max-height: 100vh;
+    object-fit: cover;
+    margin-bottom: clamp(10px, 100px, 200px);
+  }
+
+  .vertical-line {
+    position: absolute;
+    margin-top: 40px;
+    bottom: 5%;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 10%;
+    background-color: black;
+    z-index: 100;
+  }
+
+  .vertical-line .dot {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bounce 1s infinite;
+  }
+} */
+
+@media (max-width: 900px) {
+  /* Show on larger screens */
+  .show-on-large-screen {
+    display: none;
+  }
+}
+
+.card-heading {
+  position: relative;
+  display: inline-block;
+  font-family: "Poppins";
+}
+
+.card-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to control the distance of the underline from the text */
+  width: 0;
+  height: 2px;
+  background-color: black; /* Adjust the color of the underline */
+  transition: width 0.3s; /* Add transition effect */
+}
+
+.card-heading:hover::after {
+  width: 100%; /* Slide in from left to right on hover */
+}

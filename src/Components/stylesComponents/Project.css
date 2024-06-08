@@ -1,0 +1,223 @@
+.project-container {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.infoContainer {
+  display: flex;
+  gap: 16px; /* Adjust gap as needed */
+  padding: 20px;
+}
+
+/* For mobile screens */
+@media (max-width: 850px) {
+  .TeamContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding-left: 70px;
+  }
+  .leftTeam {
+    padding-left: 50px;
+    text-align: left;
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+
+  .rightTeam {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .infoContainer {
+    flex-direction: column;
+  }
+
+  .right {
+    padding-left: 100px;
+    margin-top: 50px;
+    padding-right: 50px;
+  }
+
+  .left {
+    padding-left: 100px;
+    text-align: left;
+  }
+
+  .projname {
+    font-size: 60px;
+    font-family: "Poppins";
+    margin-bottom: 80px;
+  }
+
+  .bottomContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageContainer {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 850px) {
+  .TeamContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .leftTeam {
+    margin-top: 150px;
+    padding-left: 300px;
+    text-align: left;
+    width: 30%;
+  }
+
+  .rightTeam {
+    width: 70%;
+    margin-top: 200px;
+    padding-left: 300px;
+    padding-right: 350px;
+  }
+  .infoContainer {
+    flex-direction: row;
+  }
+  .left {
+    padding-left: 100px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+    margin-top: 200px;
+    margin-left: 400px;
+    padding-right: 80px;
+  }
+  .projname {
+    font-size: 60px;
+    margin-bottom: 80px;
+    font-family: "Poppins";
+  }
+  .bottomleft {
+    margin-top: 50px;
+  }
+}
+.bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.bottomleft {
+  transition: width 0.5s ease;
+  padding-left: 120px;
+  text-align: left;
+  width: 30%;
+  width: calc(50% - 10px); /* Adjust width as needed */
+  position: sticky;
+  top: 20px; /* Adjust top position as needed */
+}
+
+.bottomright {
+  transition: width 0.5s ease;
+  width: 70%;
+  margin-top: 80px;
+  padding-left: 20px;
+  overflow-y: auto; /* Always show scrollbar for images */
+  height: 80vh; /* Adjust height as needed */
+}
+
+.imageContainer {
+  padding-right: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imageContainer img {
+  width: calc(90% - 10px); /* Adjust image width as needed */
+  height: auto; /* Adjust image height as needed */
+  object-fit: cover;
+}
+
+.increasewidth {
+  transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+.increasewidth:hover {
+  width: calc(100% - 10px); /* Adjust the width as needed */
+}
+
+.heading2 {
+  font-weight: normal;
+  font-size: 30px;
+}
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .bottomContainer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottomleft,
+  .bottomright {
+    width: 100%;
+    position: static;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .bottomright {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .left {
+    padding-left: 20px;
+    text-align: left;
+  }
+  .right {
+    padding-left: 80px;
+  }
+
+  .heading2 {
+    padding-left: 70px;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .description2 {
+    padding-left: 70px;
+    margin-right: 40px;
+    font-family: "Montserrat";
+  }
+  .description1 {
+    margin-right: 40px;
+    font-family: "Montserrat";
+  }
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit browsers like Chrome and Safari */
+}
+
+/* Optional: For Firefox */
+html {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}

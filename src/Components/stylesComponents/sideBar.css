@@ -1,0 +1,58 @@
+.custom-button {
+  position: relative;
+  width: 100%; /* Set width to 100% for responsiveness */
+  transition: background-color 0.3s, color 0.5s ease-in-out 0.8s;
+  margin-right: 0; /* Remove right margin to reduce space between buttons */
+  margin-bottom: 10px; /* Add bottom margin for spacing between buttons */
+  padding: 10px 20px; /* Set padding for the button */
+  font-weight: bold; /* Set font weight to bold */
+  border: 2px solid transparent;
+  text-align: center; /* Center-align text */
+}
+
+.custom-button:hover {
+  background-color: #e3d9d911;
+  color: #000;
+  border-color: #fff;
+  transition: background-color 0.3s, color 0.5s ease-in-out; /* Add transition for color change */
+}
+
+.slideright {
+  display: none; /* Hide the icon on mobile screens */
+}
+
+@media (max-width: 600px) {
+  .slideright {
+    top: 300px;
+  }
+  .custom-button {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  .sidebar {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .slideright {
+    top: 300px;
+  }
+  .custom-button {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  .sidebar {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .slideright {
+    top: 500px;
+  }
+  .custom-button {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  .sidebar {
+    margin-top: 200px;
+  }
+}
