@@ -14,7 +14,7 @@
   background-color: #e3d9d911;
   color: #000;
   border-color: #fff;
-  transition: background-color 0.3s, color 0.5s ease-in-out; /* Add transition for color change */
+  transition: background-color 0.3s, color 0.5s ease-in-out;
 }
 
 .slideright {
