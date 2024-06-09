@@ -68,7 +68,7 @@ function About() {
         variant="h1"
         align="center"
         sx={{
-          fontSize: { xs: "3rem", sm: "4rem", md: "5rem" },
+          fontSize: { xs: "2rem", sm: "4rem", md: "5rem" },
           position: "absolute",
           top: { xs: "20%", sm: "30%", md: "50%" }, // Adjusted top position for smaller screens
           left: "50%",
@@ -188,7 +188,6 @@ function About() {
               <p
                 color="textSecondary"
                 style={{
-                  fontSize: "clamp(40px,60px, 90px)",
                   fontFamily: "Poppins",
                 }}
                 className="number"
@@ -199,12 +198,11 @@ function About() {
                 color="primary"
                 gutterBottom
                 sx={{
-                  fontSize: "clamp(40px,25px, 30px)",
+                  fontSize: "clamp(30px,20px, 20px)",
                   marginTop: "50px",
                   color: "black",
                   fontFamily: "Poppins",
                   fontWeight: "bold",
-                  paddingLeft: "clamp(0.5rem, 50px, 60px)",
                   paddingRight: "clamp(0.25rem, 5vw, 1rem)",
                 }}
               >
@@ -214,7 +212,6 @@ function About() {
 
             <Box
               sx={{
-                paddingLeft: "clamp(10px, 180px, 220px)",
                 paddingRight: "clamp(0.25rem, 5vw, 1rem)",
                 fontSize: "11px",
               }}
@@ -260,13 +257,14 @@ function About() {
                 Please contact us for more information about our professional
                 services and the processes we employ.
               </p>
-              <Typography
+              <p
+                className="aboutbody"
                 sx={{ textAlign: "left" }}
                 color="primary"
                 style={{ cursor: "pointer", color: "black" }}
               >
                 See Our Work &gt;
-              </Typography>
+              </p>
             </Box>
           </div>
         </Card>
@@ -291,57 +289,34 @@ function About() {
           />
         </Card>
       </Box>
-
       <Box
         style={{
           flex: 1,
           display: "flex",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           marginBottom: "clamp(10px, 100px, 200px)",
+          textAlign: "left",
         }}
       >
         <Card
           style={{
             flex: 1,
-            padding: 20,
-            textAlign: "right",
-            marginLeft: "clamp(2px, 40px, 80px)", // Margin now on the left side
-          }}
-          className="hide-on-small-screen "
-        >
-          {/* Add your first image here */}
-          <img
-            src={team}
-            alt="First Image"
-            style={{
-              width: "clamp(40%, 60%, 80%)",
-              height: "auto",
-              padding: 20,
-            }}
-          />
-        </Card>
-        <Card
-          style={{
-            flex: 1,
-            padding: 20,
-            marginRight: "clamp(2px, 40px, 80px)", // Margin now on the right side
           }}
         >
-          <div className="paddingtoright">
+          <div className="paddingtoleft">
             <Box
               style={{
                 display: "flex",
                 flexDirection: "row",
                 gap: "50px",
-                marginTop: "clamp(20px, 60px, 100px)",
+                marginTop: "clamp(2px, 40px, 80px)",
               }}
             >
               <p
                 color="textSecondary"
-                gutterBottom
-                sx={{
-                  fontSize: "clamp(20px,40px, 50px)",
+                style={{
                   fontFamily: "Poppins",
-                  paddingLeft: "clamp(0.5rem, 40px, 80px)",
                 }}
                 className="number"
               >
@@ -351,55 +326,88 @@ function About() {
                 color="primary"
                 gutterBottom
                 sx={{
-                  fontSize: "clamp(40px,25px, 30px)",
+                  fontSize: "clamp(30px,20px, 20px)",
                   marginTop: "50px",
                   color: "black",
                   fontFamily: "Poppins",
                   fontWeight: "bold",
-
                   paddingRight: "clamp(0.25rem, 5vw, 1rem)",
                 }}
               >
-                Our Community
+                OUR COMMUNITY
               </Typography>
             </Box>
 
             <Box
               sx={{
-                paddingLeft: "clamp(10px, 180px, 220px)",
                 paddingRight: "clamp(0.25rem, 5vw, 1rem)",
                 fontSize: "11px",
               }}
             >
-              <p color="textSecondary" className="aboutbody">
+              <p
+                className="aboutbody"
+                color="textSecondary"
+                sx={{ textAlign: "left" }}
+              >
                 The name ‘matter’ represents our collection of creatives. We are
                 a bespoke architectural practice working in a collaborative
                 manner, many of us having been together for more than 12 years.
                 We feel more like a family than a work place, but still talk to
                 each other over the holidays.
               </p>
+
               <p
-                color="textSecondary"
                 className="aboutbody"
+                color="textSecondary"
+                sx={{ textAlign: "left" }}
+              >
+                We are a multi award winning practice, our work recognised in
+                the areas of architecture, urban planning, design, and strategic
+                thinking. We love what we do and have a profound commitment to
+                our clients. We pride ourselves on our ethical, honest, and
+                transparent approach to all projects.
+              </p>
+              <p
+                className="aboutbody"
+                color="textSecondary"
                 sx={{
+                  textAlign: "left",
                   marginBottom: "20px",
                 }}
               >
-                Our clients are welcomed into this environment along with all
-                project collaborators. Our practice is an ideal size for
-                adaptation and flexibility providing exceptional outcomes for
-                all our project types and sizes.
+                Please contact us for more information about our professional
+                services and the processes we employ.
               </p>
-
-              <Typography
+              <p
+                className="aboutbody"
                 sx={{ textAlign: "left" }}
                 color="primary"
                 style={{ cursor: "pointer", color: "black" }}
               >
                 See Our Work &gt;
-              </Typography>
+              </p>
             </Box>
           </div>
+        </Card>
+        <Card
+          style={{
+            flex: 1,
+            padding: 20,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="hide-on-small-screen "
+        >
+          {/* Add your second image here */}
+          <img
+            src={team}
+            alt="Second Image"
+            style={{
+              width: "clamp(40%, 60%, 80%)",
+              height: "auto",
+              padding: 20,
+            }}
+          />
         </Card>
       </Box>
 
@@ -425,9 +433,7 @@ function About() {
             color="grey"
             gutterBottom
             sx={{
-              fontSize: "clamp(25px,45px, 55px)",
               fontFamily: "Poppins",
-              paddingLeft: "clamp(1rem, 60px, 100px)",
 
               marginTop: "50px",
             }}
@@ -439,12 +445,12 @@ function About() {
             color="primary"
             gutterBottom
             sx={{
-              fontSize: "clamp(40px,25px, 30px)",
+              fontSize: "clamp(30px,20px, 20px)",
               marginTop: "50px",
               color: "white",
               fontFamily: "Poppins",
               fontWeight: "bold",
-              paddingLeft: "clamp(0.5rem, 50px, 60px)",
+
               paddingRight: "clamp(0.25rem, 5vw, 1rem)",
               marginBottom: "20px",
             }}

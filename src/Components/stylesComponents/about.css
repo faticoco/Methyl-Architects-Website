@@ -10,14 +10,14 @@
   background-position: center;
 }
 
-.aboutbody {
-  font-size: 20px;
-  text-align: left;
-  font-family: Montserrat;
-}
 @media (min-width: 768px) {
+  .aboutbody {
+    font-size: 20px;
+    text-align: left;
+    font-family: Montserrat;
+  }
   .paddingtoleft {
-    padding-left: 400px;
+    padding-left: 300px;
     padding-right: 20px;
   }
   .paddingtoright {
@@ -39,9 +39,14 @@
 }
 
 @media (max-width: 768px) {
+  .aboutbody {
+    font-size: 10px;
+    text-align: left;
+    font-family: Montserrat;
+  }
   .paddingtoleft {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .paddingtoright {
     padding-left: 20px;
@@ -49,10 +54,37 @@
   }
   .number {
     font-family: "Poppins";
-    font-size: 50px;
+    font-size: 30px;
     color: gray;
     margin-top: 60px;
-    margin-left: 100px;
+    margin-left: 50px;
+  }
+  .centeronsmall {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutbody {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 50px;
+    font-family: Montserrat;
+  }
+  .paddingtoleft {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .paddingtoright {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .number {
+    font-family: "Poppins";
+    font-size: 30px;
+    color: gray;
+    margin-top: 60px;
+    margin-left: 20px;
   }
   .centeronsmall {
     text-align: center;
