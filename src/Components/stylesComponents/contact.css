@@ -1,6 +1,12 @@
 @media (min-width: 1000px) {
+  .outerdiv {
+    display: flex;
+    flex-direction: row;
+  }
   .left {
     display: block;
+    margin-left: 400px;
+    margin-right: 200px;
   }
   .rightdiv {
     padding-right: "200px";
@@ -24,8 +30,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
+  .outerdiv {
+    display: flex;
+    flex-direction: row;
+  }
   .left {
     display: block;
+    margin-left: 400px;
+    margin-right: 200px;
   }
   .rightdiv {
     padding-right: "200px";
@@ -50,11 +62,49 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
+  .outerdiv {
+    display: flex;
+    flex-direction: column;
+  }
   .left {
     display: block;
-    margin-left: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
+  .rightdiv {
+    padding-right: "200px";
+  }
+  .textfield {
+    width: 200px;
+  }
+  .form {
+    width: auto;
+    background-color: rgba(186, 182, 182, 0.568);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .givemargin {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .outerdiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: block;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .rightdiv {
     padding-right: "20px";
   }

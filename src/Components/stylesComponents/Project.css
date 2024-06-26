@@ -7,7 +7,7 @@
 .infoContainer {
   display: flex;
   gap: 16px; /* Adjust gap as needed */
-  padding: 20px;
+  padding: 0px;
 }
 
 /* For mobile screens */
@@ -36,18 +36,18 @@
   }
 
   .right {
-    padding-left: 100px;
+    padding-left: 50px;
     margin-top: 50px;
     padding-right: 50px;
   }
 
-  .left {
+  .leftdiv {
     padding-left: 100px;
     text-align: left;
   }
 
   .projname {
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Poppins";
     margin-bottom: 80px;
   }
@@ -86,7 +86,7 @@
   .infoContainer {
     flex-direction: row;
   }
-  .left {
+  .leftdiv {
     padding-left: 100px;
     text-align: left;
     width: 50%;
@@ -111,7 +111,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
   overflow-y: auto;
 }
 
@@ -157,11 +156,11 @@
 }
 
 .heading2 {
-  font-weight: normal;
+  font-weight: 600;
   font-size: 30px;
 }
 /* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 500px) {
   .bottomContainer {
     padding: 20px;
     flex-direction: column;
@@ -188,17 +187,17 @@
     height: auto;
   }
 
-  .left {
+  .leftdiv {
     padding-left: 20px;
     text-align: left;
   }
   .right {
-    padding-left: 80px;
+    padding-left: 50px;
   }
 
   .heading2 {
     padding-left: 70px;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 20px;
   }
 
@@ -211,8 +210,80 @@
     margin-right: 40px;
     font-family: "Montserrat";
   }
+  .projname {
+    font-size: 40px;
+    font-family: "Poppins";
+    margin-bottom: 30px;
+  }
 }
 
+/* Adjustments for smaller screens */
+@media screen and (max-width: 500px) {
+  .bottomContainer {
+    text-align: left;
+    padding-right: 5px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottomleft,
+  .bottomright {
+    width: 100%;
+    position: static;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .bottomright {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .leftdiv {
+    padding-left: 20px;
+    text-align: left;
+  }
+  .right {
+    padding-left: 20px;
+    font-size: 10px;
+  }
+
+  .heading2 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .description2 {
+    margin-right: 20px;
+    font-family: "Montserrat";
+    font-size: 10px;
+  }
+  .description1 {
+    margin-right: 40px;
+    font-size: 10px;
+    font-family: "Montserrat";
+  }
+  .projname {
+    font-size: 30px;
+    font-family: "Poppins";
+    margin-bottom: 30px;
+  }
+  .TeamContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding-left: 0px;
+    font-size: 10px;
+  }
+}
 ::-webkit-scrollbar {
   display: none; /* Hide scrollbar for webkit browsers like Chrome and Safari */
 }

@@ -111,7 +111,7 @@ const Project = () => {
               className="mainImage"
             />
             <div className="infoContainer">
-              <div className="left">
+              <div className="leftdiv">
                 <h1 className="projname">{project.name}</h1>
                 <p className="description1">
                   {renderDescriptionWithLineBreaks(project.description)}
@@ -227,12 +227,12 @@ const Project = () => {
                   color="primary"
                   gutterBottom
                   sx={{
-                    fontSize: "clamp(40px,25px, 30px)",
+                    fontSize: "clamp(30px,20px, 25px)",
                     marginTop: "50px",
                     color: "white",
                     fontFamily: "Montserrat",
                     fontWeight: "bold",
-                    paddingLeft: "clamp(0.5rem, 50px, 60px)",
+                    paddingLeft: "clamp(0.2rem, 40px, 60px)",
                     paddingRight: "clamp(0.25rem, 5vw, 1rem)",
                     marginBottom: "20px",
                   }}

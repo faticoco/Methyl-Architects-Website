@@ -168,9 +168,7 @@ export default function Portfolio() {
 
         {/* Beautiful Backyard */}
         {searchKeyword === "" ||
-        "Beautiful Backyard"
-          .toLowerCase()
-          .includes(searchKeyword.toLowerCase()) ? (
+        "Backyard".toLowerCase().includes(searchKeyword.toLowerCase()) ? (
           <div
             className="grid-item portrait"
             style={{
@@ -189,7 +187,7 @@ export default function Portfolio() {
 
             <div className="overlay">
               <p variant="h4" className="overlay-text">
-                Beautiful Backyard
+                Backyard
               </p>
               <div className="location-line"></div>
               <p variant="body1" className="location-on-hover">

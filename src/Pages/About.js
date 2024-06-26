@@ -429,18 +429,7 @@ function About() {
           }}
           className="centeronsmall"
         >
-          <Typography
-            color="grey"
-            gutterBottom
-            sx={{
-              fontFamily: "Poppins",
-
-              marginTop: "50px",
-            }}
-            className="number"
-          >
-            03
-          </Typography>
+      
           <Typography
             color="primary"
             gutterBottom
@@ -450,8 +439,7 @@ function About() {
               color: "white",
               fontFamily: "Poppins",
               fontWeight: "bold",
-
-              paddingRight: "clamp(0.25rem, 5vw, 1rem)",
+              paddingRight: "clamp(0.2rem, 3vw, 0.5rem)",
               marginBottom: "20px",
             }}
           >

@@ -16,6 +16,12 @@
 }
 
 @media (min-width: 1200px) {
+  .landscape {
+    width: 1200px;
+  }
+  .portrait {
+    width: 500px;
+  }
   .img1,
   .img2 {
     margin-top: 150px;
@@ -39,7 +45,7 @@
   .search-bar {
     position: absolute;
     top: 50px; /* Adjust the top position */
-    right: 200px; /* Adjust the right position */
+    right: 320px; /* Adjust the right position */
     z-index: 2; /* Ensure search bar is above the grid items */
   }
   .overlay-text {
@@ -82,6 +88,12 @@
   }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
+  .landscape {
+    width: 90px;
+  }
+  .portrait {
+    width: 400px;
+  }
   .img1,
   .img2 {
     margin-top: 150px;
@@ -138,17 +150,24 @@
   }
 }
 @media (max-width: 900px) {
+  .landscape {
+    width: 900px;
+  }
+  .portrait {
+    width: 400px;
+  }
   .img1 {
     margin-top: 180px;
   }
   .search {
+    height: 40px;
     width: 300px;
   }
   .search-bar {
     margin-top: 0px;
     position: absolute;
     top: 100px; /* Adjust the top position */
-    right: 100px; /* Adjust the right position */
+    right: 10px; /* Adjust the right position */
     z-index: 2; /* Ensure search bar is above the grid items */
   }
   .border-apply {
@@ -203,11 +222,19 @@
 }
 
 @media (max-width: 700px) {
+  .landscape {
+    width: 550px;
+    height: 400px;
+  }
+  .portrait {
+    width: 500px;
+    padding-right: 100px;
+  }
   .img1 {
     margin-top: 180px;
   }
   .search {
-    width: 200px;
+    width: 300px;
   }
   .overlay-text {
     font-size: 30px;
@@ -216,7 +243,7 @@
     margin-bottom: 10px;
     transition: transform 0.5s ease;
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 30px;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease, transform 0.5s ease; /* Add transition for opacity and transform */
@@ -225,6 +252,7 @@
   .view-more {
     font-family: "Poppins";
     font-size: 15px;
+    margin-right: 60px;
   }
 }
 @media (max-width: 1000px) {

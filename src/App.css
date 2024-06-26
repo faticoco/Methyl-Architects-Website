@@ -36,7 +36,15 @@
     transform: rotate(360deg);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  /* Adjust width for smaller screens */
+  .image {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
   /* Adjust width for smaller screens */
   .image {
     width: 200px;
